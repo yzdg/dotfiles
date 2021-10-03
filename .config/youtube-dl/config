@@ -1,0 +1,12 @@
+# Proxy
+--proxy 127.0.0.1:7890
+
+# Output
+-o ~/videos/%(title)s.%(ext)s
+
+# Subtitle
+--write-sub
+--write-auto-sub
+
+# Extension
+-f mp4

@@ -1,0 +1,6 @@
+nohup.out
+clash
+rclone
+.zcompdump
+.zcompcache
+.config/beets/state.pickle

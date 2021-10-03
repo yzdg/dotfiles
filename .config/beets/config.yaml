@@ -1,0 +1,4 @@
+directory: /media/suh/musics
+library: ~/.cache/beets/musiclibrary.db
+import:
+  move: yes
