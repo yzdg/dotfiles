@@ -1,15 +1,12 @@
-#!/bin/sh
-
-# Run upon x start
+#!/bin/env bash
 
 xinput set-prop DELL0922:00\ 04F3:30E3\ Touchpad libinput\ Tapping\ Enabled 1 & # Enable touchpad tap
-feh --bg-fill ${HOME}/pictures/wallpapers/catInSnow.jpg & # Set background
-git-auto -d "${HOME}/documents/orgs/notes" -i 600 -s origin -b master -p &
+feh --bg-fill ${HOME}/pictures/wallpapers/catInSnow.jpg &
+git-auto -d "${LOGSEQ_NOTES}" -i 600 -s origin -b master -p &
 fcitx5 -d &
-# nm-applet &
 slstatus &
 xautolock -time 10 -locker slock &
-# picom &
+picom &
 udiskie --tray &
 
 # start gnome-keyring service
