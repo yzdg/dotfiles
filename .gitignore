@@ -4,3 +4,4 @@ rclone
 .zcompdump
 .zcompcache
 .config/beets/state.pickle
+packer_compliled.lua
