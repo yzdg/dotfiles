@@ -160,6 +160,10 @@ return require('packer').startup(function(use)
   map('n', '<leader>fb', '<cmd>lua require("telescope.builtin").buffers()<cr>')
   map('n', '<leader>fh', '<cmd>lua require("telescope.builtin").help_tags()<cr>')
 
+  -- treesitter
+  local ts = require 'nvim-treesitter.configs'
+  ts.setup {ensure_installed = 'maintained', highlight = {enable = true}}
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
