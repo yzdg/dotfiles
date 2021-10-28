@@ -21,6 +21,7 @@ alias e="emacs"
 alias ev="env HOME=${XDG_CONFIG_HOME} emacs" #Run vanilla emacs
 alias s="systemctl"
 alias bs="sudo powertop --auto-tune"
+alias dual="xrandr --output DP-3 --left-of eDP-1"
 
 # Load
 autoload -Uz compinit
