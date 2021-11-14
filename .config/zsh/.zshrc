@@ -17,11 +17,13 @@ alias glg="git log --graph --pretty=format:'%h/%an - %s'"
 alias gus="git restore --staged"
 alias ..="cd .."
 alias vim="nvim"
-alias e="emacs"
-alias ev="env HOME=${XDG_CONFIG_HOME} emacs" #Run vanilla emacs
 alias s="systemctl"
 alias bs="sudo powertop --auto-tune"
 alias dual="xrandr --output DP-3 --left-of eDP-1"
+alias balanced="sudo smbios-thermal-ctl --set-thermal-mode=balanced"
+alias cool="sudo smbios-thermal-ctl --set-thermal-mode=cool-bottom"
+alias quiet="sudo smbios-thermal-ctl --set-thermal-mode=quiet"
+alias performance="sudo smbios-thermal-ctl --set-thermal-mode=performance"
 
 # Load
 autoload -Uz compinit

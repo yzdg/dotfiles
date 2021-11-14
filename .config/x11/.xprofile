@@ -3,13 +3,14 @@
 xinput set-prop DELL0922:00\ 04F3:30E3\ Touchpad libinput\ Tapping\ Enabled 1 & # Enable touchpad tap
 clash -f ${HOME}/.config/clash/config.yaml &
 feh --bg-fill ${HOME}/pictures/wallpapers/catInSnow.jpg &
-git-auto -d "${LOGSEQ_NOTES}" -i 600 -s origin -b master -p &
+git-auto -d "${LOGSEQ_NOTES}" -i 600 &
 fcitx5 -d &
 slstatus &
 xautolock -time 10 -locker slock &
 picom &
 udiskie --tray &
 pasystray &
+onedriver ${HOME}/onedriver &
 
 # start gnome-keyring service
 eval $(gnome-keyring-daemon --start)
