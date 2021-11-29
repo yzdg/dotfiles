@@ -1,0 +1,12 @@
+set folder = "imaps://yzd@yzdeng.xyz@mail.yzdeng.xyz:993"
+set smtp_url = "smtp://yzd@yzdeng.xyz@mail.yzdeng.xyz:587"
+
+set from = "yzd@yzdeng.xyz"
+set realname = "nobody"
+
+set spoolfile = "+INBOX"
+set record = "+Sent"
+set trash = "+Trash"
+set postponed = "+Drafts"
+
+mailboxes =INBOX =Sent =Drafts =Junk

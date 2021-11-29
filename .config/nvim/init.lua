@@ -27,6 +27,7 @@ opt.softtabstop = 2
 opt.expandtab = true
 opt.autoindent = true
 opt.conceallevel = 0
+cmd[[colorscheme base16-default-dark]]
 
 -- mapping help
 local function map(mode, lhs, rhs, opts)
@@ -44,6 +45,7 @@ end
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
+  use 'chriskempson/base16-vim'
   use 'rstacruz/vim-closer'
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/cmp-nvim-lsp'
@@ -103,7 +105,7 @@ return require('packer').startup(function(use)
   local capabilities = vim.lsp.protocol.make_client_capabilities()
   capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
   -- Enable some language servers with the additional completion capabilities offered by nvim-cmp
-  local servers = { 'ccls', 'tsserver' }
+  local servers = { 'ccls', 'tsserver', 'pyright' }
 
   for _, lsp in ipairs(servers) do
     nvim_lsp[lsp].setup {
