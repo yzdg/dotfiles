@@ -40,6 +40,11 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 -- :noh
 keymap("n", "<leader>l", ":noh<CR>", opts)
 
+-- Leetcode
+keymap('n', '<leader>ll', '<cmd>LeetCodeList<cr>', opts)
+keymap('n', '<leader>lt', '<cmd>LeetCodeTest<cr>', opts)
+keymap('n', '<leader>ls', '<cmd>LeetCodeSubmit<cr>', opts)
+
 -- Insert --
 -- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)
