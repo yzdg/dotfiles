@@ -21,7 +21,6 @@ opt.sidescrolloff = 8
 opt.smartindent = true
 opt.splitbelow = true
 opt.splitright = true
-opt.tabstop = 2
 opt.termguicolors = true
 opt.softtabstop = 2
 opt.expandtab = true
@@ -64,6 +63,7 @@ return require('packer').startup(function(use)
         require"surround".setup {mappings_style = "surround"}
       end
   }
+  use 'ianding1/leetcode.vim'
 
 
 
@@ -205,6 +205,16 @@ return require('packer').startup(function(use)
   -- treesitter
   local ts = require 'nvim-treesitter.configs'
   ts.setup {ensure_installed = 'maintained', highlight = {enable = true}}
+
+  -- leetcode
+  map('n', '<leader>ll', '<cmd>LeetCodeList<cr>')
+  map('n', '<leader>lt', '<cmd>LeetCodeTest<cr>')
+  map('n', '<leader>ls', '<cmd>LeetCodeSubmit<cr>')
+  g["leetcode_solution_filetype"] = 'golang'
+  g["leetcode_browser"] = 'firefox'
+  g["leetcode_hide_paid_only"] = 1
+  g["leetcode_hide_topics"] = 1
+  g["leetcode_hide_companies"] = 1
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
