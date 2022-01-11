@@ -12,7 +12,6 @@ local options = {
   showmode = false,                        -- we don't need to see things like -- INSERT -- anymore
   showtabline = 2,                         -- always show tabs
   smartcase = true,
-  smartindent = true,
   splitbelow = true,
   splitright = true,
   swapfile = false,
@@ -21,9 +20,6 @@ local options = {
   undofile = true,                         -- enable persistent undo
   updatetime = 300,                        -- faster completion (4000ms default)
   writebackup = false,
-  expandtab = true,                        -- convert tabs to spaces
-  shiftwidth = 2,                          -- the number of spaces inserted for each tab shift
-  tabstop = 2,                             -- insert 2 spaces for a tab
   cursorline = true,
   number = true,
   relativenumber = false,
@@ -33,6 +29,12 @@ local options = {
   colorcolumn = { 80 },
   scrolloff = 8,
   sidescrolloff = 8,
+  -- Tab options
+  expandtab = true,                        -- convert tabs to spaces
+  shiftwidth = 2,                          -- the number of spaces inserted for each tab shift
+  tabstop = 8,                             -- insert 8 spaces for a tab
+  softtabstop = 2,
+  smartindent = true,
 }
 
 vim.opt.shortmess:append "c"
