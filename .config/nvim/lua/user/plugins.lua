@@ -65,6 +65,9 @@ return packer.startup(function(use)
   -- LSP
   use "neovim/nvim-lspconfig"
 
+  -- Telescope
+  use "nvim-telescope/telescope.nvim"
+
   -- Leetcode
   use 'ianding1/leetcode.vim'
 
