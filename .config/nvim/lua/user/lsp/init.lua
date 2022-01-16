@@ -57,7 +57,7 @@ local opts = {
   capabilities = capabilities,
 }
 
-local servers = { "sumneko_lua", "pyright", "ccls", "gopls" }
+local servers = { "sumneko_lua", "pyright", "ccls", "gopls", "bashls" }
 for _, lsp in ipairs(servers) do
   local add_opts = require("user.lsp.settings/" .. lsp)
   opts = vim.tbl_deep_extend("force", add_opts, opts)
