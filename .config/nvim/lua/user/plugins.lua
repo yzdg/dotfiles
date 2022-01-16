@@ -75,6 +75,9 @@ return packer.startup(function(use)
   }
   use "p00f/nvim-ts-rainbow"
 
+  -- Auto-pair
+  use "windwp/nvim-autopairs"
+
   -- Leetcode
   use 'ianding1/leetcode.vim'
 
