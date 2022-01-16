@@ -4,7 +4,6 @@ xinput set-prop DELL0922:00\ 04F3:30E3\ Touchpad libinput\ Tapping\ Enabled 1 & 
 clash -f ${HOME}/.config/clash/config.yaml &
 feh --bg-fill ${HOME}/pictures/wallpapers/catInSnow.jpg &
 git-auto -d "${LOGSEQ_NOTES}" -i 600 &
-git-auto -d "${HOME}/documents/orgs/s05" -i 600 &
 fcitx5 -d &
 slstatus &
 xautolock -time 10 -locker slock &

@@ -34,15 +34,5 @@ autoload -U colors && colors
 PS1="%F{green}%n%f@%F{magenta}%m%f:%F{blue}%~ %f[%F{yellow}%?%f]> "
 
 # Syntax highlighting
-if [ "$(uname)" = "Linux" ]; then
-    source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
-    source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
-elif [ "$(uname)" = "Darwin" ]; then
-    source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
-    source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-    if type brew &>/dev/null; then
-      FPATH="$(brew --prefix)/share/zsh/site-functions:$FPATH"
-      autoload -Uz compinit
-      compinit
-    fi
-fi
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null

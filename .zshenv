@@ -14,7 +14,7 @@ export FTP_PROXY="http://127.0.0.1:7890"
 export NO_PROXY="localhost, 127.0.0.1"
 
 # PATH
-export PATH="${HOME}/.local/bin:${HOME}/.emacs.d/bin:${PATH}"
+export PATH="${HOME}/.local/bin:${PATH}"
 
 # DIRS & RCS
 export XDG_CONFIG_HOME="$HOME/.config"
@@ -28,6 +28,7 @@ export RCLONE_CONFIG_DIR="${XDG_CONFIG_HOME:-$HOME/.config}/rclone"
 export PASSWORD_STORE_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/pass"
 export GNUPGHOME="${XDG_CONFIG_HOME:-$HOME/.config}/gnupg"
 export NPM_CONFIG_USERCONFIG="${XDG_CONFIG_HOME:-$HOME/.config}/npm/.npmrc"
+export LOGSEQ_NOTES="${HOME}/documents/notes"
 
 # Custom
 export MUSIC_MOBILE_PATH="/storage/self/primary/Music/"
@@ -37,10 +38,3 @@ export MUSIC_LIBRARY_PATH="/media/suh/musics/"
 export GTK_IM_MODULE=fcitx5
 export QT_IM_MODULE=fcitx5
 export XMODIFIERS="@im=fcitx5"
-
-# Machine-specific
-if [ $(uname) = "Linux" ]; then
-    export LOGSEQ_NOTES="${HOME}/documents/orgs/notes"
-elif [ $(uname) = "Darwin" ]; then
-    export LOGSEQ_NOTES="${HOME}/Documents/notes"
-fi
