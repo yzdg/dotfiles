@@ -1,6 +1,7 @@
 #!/bin/env bash
 
 xinput set-prop DELL0922:00\ 04F3:30E3\ Touchpad libinput\ Tapping\ Enabled 1 & # Enable touchpad tap
+xinput set-prop 11 320 1 # Another one
 clash -f ${HOME}/.config/clash/config.yaml &
 feh --bg-fill ${HOME}/pictures/wallpapers/catInSnow.jpg &
 git-auto -d "${LOGSEQ_NOTES}" -i 600 &
