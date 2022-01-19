@@ -24,6 +24,10 @@ alias balanced="sudo smbios-thermal-ctl --set-thermal-mode=balanced"
 alias cool="sudo smbios-thermal-ctl --set-thermal-mode=cool-bottom"
 alias quiet="sudo smbios-thermal-ctl --set-thermal-mode=quiet"
 alias performance="sudo smbios-thermal-ctl --set-thermal-mode=performance"
+alias t="todo.sh"
+alias ta="todo.sh add"
+alias tl="todo.sh list"
+alias td="todo.sh do"
 
 # Load
 autoload -Uz compinit

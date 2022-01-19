@@ -81,6 +81,9 @@ return packer.startup(function(use)
   -- Leetcode
   use 'ianding1/leetcode.vim'
 
+  -- Todo.txt
+  use "freitass/todo.txt-vim"
+
   -- Automatically set up configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
