@@ -78,9 +78,6 @@ return packer.startup(function(use)
   -- Auto-pair
   use "windwp/nvim-autopairs"
 
-  -- Leetcode
-  use 'ianding1/leetcode.vim'
-
   -- Todo.txt
   use "freitass/todo.txt-vim"
 
