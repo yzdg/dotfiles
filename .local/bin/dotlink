@@ -30,9 +30,6 @@ ask() {
 
   done
 }
-## Link
-# Dotfiles
-ask "Install symlink for all dotfiles?" Y && ln -sfn ${HOME}/dotfiles/.config/* ${HOME}/.config/
 
-# Scripts
+ask "Install symlink for all dotfiles?" Y && ln -sfn ${HOME}/dotfiles/.config/* ${HOME}/.config/; ln -sfn ${HOME}/dotfiles/.zshenv ${HOME}/.zshenv
 ask "Install symlink for all scripts?" Y && ln -sfn ${HOME}/dotfiles/.local/bin/* ${HOME}/.local/bin/
