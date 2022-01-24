@@ -28,6 +28,8 @@ alias t="todo.sh"
 alias ta="todo.sh add"
 alias tl="todo.sh list"
 alias td="todo.sh do"
+alias gdog="git log --all --decorate --oneline --graph"
+alias gb="git branch"
 
 # Load
 autoload -Uz compinit
