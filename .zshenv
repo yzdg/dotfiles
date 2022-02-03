@@ -14,7 +14,7 @@ export FTP_PROXY="http://127.0.0.1:7890"
 export NO_PROXY="localhost, 127.0.0.1"
 
 # PATH
-export PATH="${HOME}/.local/bin:${PATH}"
+export PATH="${HOME}/.local/bin:${HOME}/.emacs.d/bin:${PATH}"
 
 # DIRS & RCS
 export XDG_CONFIG_HOME="$HOME/.config"
@@ -29,6 +29,7 @@ export PASSWORD_STORE_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/pass"
 export GNUPGHOME="${XDG_CONFIG_HOME:-$HOME/.config}/gnupg"
 export NPM_CONFIG_USERCONFIG="${XDG_CONFIG_HOME:-$HOME/.config}/npm/.npmrc"
 export LOGSEQ_NOTES="${HOME}/documents/notes"
+export DOOMDIR="${XDG_CONFIG_HOME:-$HOME/.config}/doom.d"
 
 # Custom
 export MUSIC_MOBILE_PATH="/storage/self/primary/Music/"
