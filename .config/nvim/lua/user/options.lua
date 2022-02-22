@@ -30,10 +30,12 @@ local options = {
   scrolloff = 8,
   sidescrolloff = 8,
   -- Tab options
-  expandtab = true,                        -- convert tabs to spaces
+  copyindent = true,
+  expandtab = false,                        -- convert tabs to spaces
+  preserveindent = true,
   shiftwidth = 2,                          -- the number of spaces inserted for each tab shift
-  tabstop = 8,                             -- insert 8 spaces for a tab
-  softtabstop = 2,
+  softtabstop = 0,
+  tabstop = 2,                             -- insert 8 spaces for a tab
   smartindent = true,
 }
 

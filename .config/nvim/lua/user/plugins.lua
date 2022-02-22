@@ -48,6 +48,9 @@ return packer.startup(function(use)
   -- Colorscheme
   use 'chriskempson/base16-vim'
 
+  -- smarter tabs
+  use 'Thyrum/vim-stabs'
+
   -- Completion
   use "hrsh7th/nvim-cmp"              -- The completion plugin
   -- Completion sources (more at https://github.com/topics/nvim-cmp)
