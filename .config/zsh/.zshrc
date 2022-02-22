@@ -32,6 +32,7 @@ alias gdog="git log --all --decorate --oneline --graph"
 alias gb="git branch"
 alias red="sudo sh -c 'rmmod psmouse; modprobe psmouse proto=imps'"
 alias tap="xinput --set-prop 'Synaptics TM3203-003' 'libinput Tapping Enabled' 1"
+alias grl="grep --recursive --line-number --binary-files=without-match"
 
 # Load
 autoload -Uz compinit
