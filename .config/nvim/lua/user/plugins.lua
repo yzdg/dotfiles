@@ -48,9 +48,6 @@ return packer.startup(function(use)
   -- Colorscheme
   use 'chriskempson/base16-vim'
 
-  -- smarter tabs
-  use 'Thyrum/vim-stabs'
-
   -- Completion
   use "hrsh7th/nvim-cmp"              -- The completion plugin
   -- Completion sources (more at https://github.com/topics/nvim-cmp)
@@ -83,6 +80,9 @@ return packer.startup(function(use)
 
   -- Todo.txt
   use "freitass/todo.txt-vim"
+
+	-- editorconfig
+	use "editorconfig/editorconfig-vim"
 
   -- Automatically set up configuration after cloning packer.nvim
   -- Put this at the end after all plugins
