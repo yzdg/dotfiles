@@ -1,0 +1,10 @@
+#!/bin/sh -e
+
+if [[ $# -ne 2 ]]; then
+	echo "usage: rwc source_dir dir_under_remote_/var/www"
+	echo "       all dir should not have followed by a /"
+	echo "       rwc: rsync website content"
+	exit 1
+fi
+
+rsync -rtvzP "./$1/" "yzd@yzdeng.xyz:/var/www/$2"
