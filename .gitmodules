@@ -1,0 +1,3 @@
+[submodule ".config/vis/edconf"]
+	path = .config/vis/edconf
+	url = https://github.com/seifferth/vis-editorconfig
