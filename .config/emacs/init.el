@@ -8,6 +8,9 @@
 ;; consider a period followed by a single space to be end of sentence
 (setq sentence-end-double-space nil)
 
+;; don't create auto-save-list directory
+(setq auto-save-list-file-prefix nil)
+
 ;; write auto-saves and backups to separate directory
 (setq make-backup-files nil)
 (setq auto-save-default nil)
@@ -31,12 +34,19 @@
   (package-refresh-contents))
 
 ;; install packages
-(dolist (package '(undo-fu evil paredit go-mode))
+(dolist (package '(undo-fu evil paredit go-mode eglot which-key company editorconfig))
   (unless (package-installed-p package)
     (package-install package)))
 
+;; editorconfig
+(require 'editorconfig)
+(editorconfig-mode 1)
+
 (require 'init-evil)
 (require 'init-paredit)
+(require 'init-lsp)
+(require 'init-which)
+(require 'init-completion)
 
 (require 'init-command)
 (require 'init-keymap)
