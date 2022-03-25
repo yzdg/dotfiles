@@ -12,6 +12,7 @@
 (require 'init-completion)
 (require 'init-command)
 (require 'init-keymap)
+(require 'init-org)
 
 ;; start server.
 (require 'server)

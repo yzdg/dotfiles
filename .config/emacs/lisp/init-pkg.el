@@ -9,7 +9,16 @@
   (package-refresh-contents))
 
 ;; install packages
-(dolist (package '(undo-fu evil paredit go-mode eglot which-key company editorconfig))
+(dolist (package '(
+                   undo-fu
+                   evil
+                   paredit
+                   go-mode
+                   eglot
+                   which-key
+                   company
+                   editorconfig
+                   org-roam))
   (unless (package-installed-p package)
     (package-install package)))
 
