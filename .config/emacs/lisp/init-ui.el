@@ -27,7 +27,16 @@
 (setq-default indicate-buffer-boundaries 'left)
 
 ;; highlight matching pairs of parentheses
+(require 'paren)
+(set-face-background 'show-paren-match (face-background 'default))
+(set-face-foreground 'show-paren-match "#f4a460")
+(set-face-attribute 'show-paren-match nil :weight 'extra-bold)
 (setq show-paren-delay 0)
 (show-paren-mode)
+
+;; highlight current line
+(require 'hl-line)
+(set-face-attribute 'hl-line nil :inherit nil :background "gray18")
+(global-hl-line-mode 1)
 
 (provide 'init-ui)

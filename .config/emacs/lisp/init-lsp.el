@@ -1,6 +1,11 @@
 ;;; init-lsp.el
 ;;; eglot
 
-(add-hook 'go-mode-hook 'eglot-ensure)
+(dolist (hook '(
+                 c-mode-hook
+                 c++-mode-hook
+                 go-mode-hook
+                 lua-mode-hook))
+  (add-hook hook 'eglot-ensure))
 
 (provide 'init-lsp)

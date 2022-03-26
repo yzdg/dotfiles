@@ -9,11 +9,20 @@
   (setq indent-tabs-mode t)
   (setq tab-width custom-tab-width))
 
-(add-hook 'prog-mode-hook 'enable-tabs)
-(add-hook 'go-mode-hook 'enable-tabs)
+;; use tabs
+(dolist (hook '(
+                 c-mode-hook
+                 c++-mode-hook
+                 go-mode-hook
+                 lua-mode-hook
+                 prog-mode-hook))
+  (add-hook hook 'enable-tabs))
 
-(add-hook 'lisp-mode-hook 'disable-tabs)
-(add-hook 'emacs-lisp-mode-hook 'disable-tabs)
+;; don't use tabs
+(dolist (hook '(
+                 emacs-lisp-mode-hook
+                 lisp-mode-hook))
+  (add-hook hook 'disable-tabs))
 
 ;; language-specific
 (setq-default python-indent-offset custom-tab-width)
