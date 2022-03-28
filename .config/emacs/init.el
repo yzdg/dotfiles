@@ -2,7 +2,7 @@
 
 (require 'init-ui)
 (require 'init-indent)
-(require 'init-minibuffer)
+;; (require 'init-minibuffer)
 (require 'init-misc)
 (require 'init-pkg)
 (require 'init-evil)
@@ -13,8 +13,3 @@
 (require 'init-command)
 (require 'init-keymap)
 (require 'init-org)
-
-;; start server.
-(require 'server)
-(unless (server-running-p)
-  (server-start))

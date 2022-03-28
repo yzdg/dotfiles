@@ -2,7 +2,10 @@
 ;;; org-mode and org-roam
 
 (require 'org-roam)
-(setq org-roam-directory "~/documents/orgs")
+(setq org-roam-directory "~/documents/orgs/")
+(setq org-roam-db-location (concat org-roam-directory "org-roam.db"))
+(setq org-id-locations-file (concat org-directory ".orgids"))
+(setq org-descriptive-links nil) ;; show `[[]]' in org links
 (setq org-roam-node-display-template (concat "${title:*} " (propertize "${tags:10}" 'face 'org-tag)))
 (org-roam-db-autosync-mode)
 
