@@ -1,11 +1,9 @@
 ;;; custom keymaps
 
-;; unset keybindings
-(evil-global-set-key 'motion (kbd "K") nil)
-
 (global-set-key (kbd "C-c i") 'open-init-file)
 (global-set-key (kbd "C-c d") 'delete-trailing-whitespace)
 
+(define-key minibuffer-local-completion-map (kbd "SPC") 'self-insert-command) ;; insert space in minibuffer
 
 (evil-global-set-key 'normal (kbd "<leader> -") 'evil-window-split)
 (evil-global-set-key 'normal (kbd "<leader> =") 'evil-window-vsplit)
