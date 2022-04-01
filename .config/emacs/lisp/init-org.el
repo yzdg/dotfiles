@@ -1,6 +1,8 @@
 ;;; init-org.el
 ;;; org-mode and org-roam
 
+(add-hook 'org-mode-hook 'visual-line-mode)
+
 (require 'org-roam)
 (setq org-roam-directory "~/documents/orgs/")
 (setq org-roam-db-location (concat org-roam-directory "org-roam.db"))
@@ -9,7 +11,7 @@
 (setq org-roam-node-display-template (concat "${title:*} " (propertize "${tags:10}" 'face 'org-tag)))
 (setq org-roam-capture-templates
       '(("d" "default" plain "%?"
-         :if-new (file+head "${slug}.org"
+         :if-new (file+head "%<%Y%m%d%H%M%S>.org"
                             "#+title: ${title}\n")
          :immediate-finish t
          :unnarrowed t)))
