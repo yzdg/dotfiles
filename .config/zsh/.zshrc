@@ -39,6 +39,10 @@ autoload -Uz compinit
 compinit
 zstyle ':completion:*' menu select
 
+# completion
+bindkey '^[[Z' reverse-menu-complete
+
+# prompt
 autoload -U colors && colors
 PS1="%F{green}%n%f@%F{magenta}%m%f:%F{blue}%~ %f[%F{yellow}%?%f]> "
 
