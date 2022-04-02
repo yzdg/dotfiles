@@ -15,6 +15,7 @@
                    paredit
                    go-mode
                    eglot
+                   eldoc-box
                    which-key
                    company
                    editorconfig

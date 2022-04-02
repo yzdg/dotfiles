@@ -39,4 +39,10 @@
 (set-face-attribute 'hl-line nil :inherit nil :background "gray18")
 (global-hl-line-mode 1)
 
+;; eglot/eldoc
+(require 'eldoc-box)
+(setq eldoc-box-cleanup-interval 2
+      eldoc-box-max-pixel-height 900
+      eldoc-box-max-pixel-width 1500)
+
 (provide 'init-ui)
