@@ -2,7 +2,7 @@
 
 (require 'init-ui)
 (require 'init-indent)
-;; (require 'init-minibuffer)
+(require 'init-minibuffer)
 (require 'init-misc)
 (require 'init-pkg)
 (require 'init-evil)
