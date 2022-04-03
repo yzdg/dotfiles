@@ -9,6 +9,8 @@
 (evil-global-set-key 'normal (kbd "<leader> =") 'evil-window-vsplit)
 (evil-global-set-key 'normal (kbd "u") 'undo-fu-only-undo)
 (evil-global-set-key 'normal (kbd "C-r") 'undo-fu-only-redo)
+(evil-global-set-key 'normal (kbd "H") 'previous-buffer)
+(evil-global-set-key 'normal (kbd "L") 'next-buffer)
 
 ;; org mode
 (evil-global-set-key 'normal (kbd "<leader> r f") 'org-roam-node-find)
