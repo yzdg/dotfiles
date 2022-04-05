@@ -8,6 +8,10 @@
   (local-set-key (kbd "TAB") 'tab-to-tab-stop)
   (setq indent-tabs-mode t)
   (setq tab-width custom-tab-width))
+(defun indent/hungry-delete ()
+  (setq backward-delete-char-untabify-method 'hungry))
+(defun indent/normal-delete ()
+  (setq backward-delete-char-untabify-method 'untabify))
 
 ;; use tabs
 (dolist (hook '(
@@ -34,6 +38,7 @@
 ;; make the backspace properly erase the tab instead of
 ;; removing 1 space at a time.
 (setq backward-delete-char-untabify-method 'hungry)
+(add-hook 'org-mode-hook 'indent/normal-delete)
 
 ;; shift width for evil-mode
 ;; for the vim-like motions of ">>" and "<<".
