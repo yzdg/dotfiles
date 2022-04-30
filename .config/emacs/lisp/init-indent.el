@@ -53,4 +53,9 @@
   '((tab-mark 9 [124 9] [92 9]))) ; 124 is the ascii id for '\|'
 (global-whitespace-mode) ; enable whitespace mode everywhere
 
+;; editorconfig
+;; put it here since mainly use it for indentation config
+(require 'editorconfig)
+(editorconfig-mode 1)
+
 (provide 'init-indent)
