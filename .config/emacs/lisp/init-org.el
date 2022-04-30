@@ -3,10 +3,12 @@
 
 (add-hook 'org-mode-hook 'visual-line-mode)
 
+(setq org-capture-bookmark nil)
+
 (require 'org-roam)
 (setq org-roam-directory "~/documents/orgs/")
 (setq org-roam-db-location (concat org-roam-directory "org-roam.db"))
-(setq org-id-locations-file (concat org-directory ".orgids"))
+(setq org-id-locations-file (concat org-roam-directory ".orgids"))
 (setq org-descriptive-links nil) ;; show `[[]]' in org links
 (setq org-roam-node-display-template (concat "${title:*} " (propertize "${tags:10}" 'face 'org-tag)))
 (setq org-roam-capture-templates
