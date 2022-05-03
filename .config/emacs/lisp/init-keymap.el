@@ -16,7 +16,8 @@
 (evil-global-set-key 'normal (kbd "<leader> r f") 'org-roam-node-find)
 (evil-define-key 'normal org-mode-map
   (kbd "<leader> r b") 'org-roam-buffer-toggle
-  (kbd "<leader> r i") 'org-roam-node-insert)
+  (kbd "<leader> r i") 'org-roam-node-insert
+  (kbd "<tab>") 'org-cycle)
 
 ;; lsp
 (evil-define-key 'motion eglot-mode-map
