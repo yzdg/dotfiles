@@ -18,6 +18,7 @@
              company
              editorconfig
              org-roam
+             ido-vertical-mode
              icomplete-vertical))
 
 (dolist (package pkgs)
