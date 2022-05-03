@@ -17,7 +17,8 @@
              which-key
              company
              editorconfig
-             org-roam))
+             org-roam
+             icomplete-vertical))
 
 (dolist (package pkgs)
   (unless (package-installed-p package)

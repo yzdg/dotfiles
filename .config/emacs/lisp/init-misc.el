@@ -28,4 +28,7 @@
 (setq mouse-wheel-follow-mouse 't) ;; scroll window under mouse
 (setq scroll-step 1) ;; keyboard scroll one line at a time
 
+;; disbale `Completions' buffer from popping out
+(setq completion-auto-help nil)
+
 (provide 'init-misc)
