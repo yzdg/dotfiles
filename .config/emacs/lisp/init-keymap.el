@@ -23,7 +23,6 @@
 (evil-define-key 'motion eglot-mode-map
   (kbd "gd") 'xref-find-definitions
   (kbd "gr") 'xref-find-references
-  ; (kbd "K") 'eldoc-doc-buffer
   (kbd "<leader> l r") 'eglot-rename
   (kbd "<leader> l f") 'eglot-format)
 

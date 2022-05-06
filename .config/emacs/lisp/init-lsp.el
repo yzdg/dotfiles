@@ -8,6 +8,6 @@
                  lua-mode-hook))
   (add-hook hook 'eglot-ensure))
 
-(add-hook 'eglot--managed-mode-hook #'eldoc-box-hover-mode t)
+(add-hook 'eglot--managed-mode-hook #'eldoc-box-hover-at-point-mode t)
 
 (provide 'init-lsp)
