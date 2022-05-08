@@ -6,7 +6,7 @@
 (setq org-capture-bookmark nil)
 
 (require 'org-roam)
-(setq org-roam-directory "~/orgs/")
+(setq org-roam-directory "~/orgs/zettle/")
 (setq org-roam-db-location (concat org-roam-directory "org-roam.db"))
 (setq org-id-locations-file (concat org-roam-directory ".orgids"))
 (setq org-descriptive-links nil) ;; show `[[]]' in org links
@@ -18,5 +18,13 @@
          :immediate-finish t
          :unnarrowed t)))
 (org-roam-db-autosync-mode)
+
+(require 'find-lisp)
+(setq org-agenda-files
+      (find-lisp-find-files "~/orgs/gtd/" "\.org$"))
+(setq org-capture-templates
+      `(("i" "Inbox" entry  (file "~/orgs/gtd/inbox.org")
+         ,(concat "* TODO %?\n"
+                  "/Entered on/ %U"))))
 
 (provide 'init-org)

@@ -4,7 +4,7 @@ xinput set-prop DELL0922:00\ 04F3:30E3\ Touchpad libinput\ Tapping\ Enabled 1 & 
 xinput set-prop DELL0922:00\ 04F3:30E3\ Touchpad libinput\ Natural\ Scrolling\ Enabled 0 & # Enable natural scrolling
 xinput --set-prop "Synaptics TM3203-003" "libinput Tapping Enabled" 1 & # Another one
 feh --bg-fill ${HOME}/pictures/wallpapers/main.jpg &
-git-auto -d "${LOGSEQ_NOTES}" -i 600 &
+#git-auto -d "${LOGSEQ_NOTES}" -i 600 &
 fcitx5 -d &
 slstatus &
 xautolock -time 10 -locker slock &
@@ -12,6 +12,7 @@ picom &
 udiskie --tray &
 pasystray &
 onedriver ${HOME}/onedriver &
+rclone mount webdav:orgs/gtd ${HOME}/orgs/gtd --vfs-cache-mode full &
 
 # start gnome-keyring service
 eval $(gnome-keyring-daemon --start)
