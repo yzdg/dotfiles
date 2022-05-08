@@ -1,7 +1,8 @@
 ;;; custom keymaps
 
 (global-set-key (kbd "C-c i") 'open-init-file)
-(global-set-key (kbd "C-c d") 'delete-trailing-whitespace)
+(global-set-key (kbd "C-c t") 'delete-trailing-whitespace)
+(global-set-key (kbd "C-c d") 'delete-file-and-buffer)
 
 (define-key minibuffer-local-completion-map (kbd "SPC") 'self-insert-command) ;; insert space in minibuffer
 
