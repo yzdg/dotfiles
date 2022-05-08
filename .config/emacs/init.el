@@ -1,6 +1,7 @@
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
-
 (require 'init-pkg)
+(eval-when-compile
+  (require 'use-package))
 (require 'init-ui)
 (require 'init-indent)
 (require 'init-minibuffer)

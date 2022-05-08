@@ -8,6 +8,7 @@
   (package-refresh-contents))
 
 (setq pkgs '(
+             use-package
              undo-fu
              evil
              paredit
@@ -18,8 +19,7 @@
              company
              editorconfig
              org-roam
-             ido-vertical-mode
-             icomplete-vertical))
+             ido-vertical-mode))
 
 (dolist (package pkgs)
   (unless (package-installed-p package)
