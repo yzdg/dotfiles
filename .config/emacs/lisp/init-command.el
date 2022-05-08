@@ -16,4 +16,9 @@
               (kill-buffer)))
       (message "Not a file visiting buffer!"))))
 
+(defun revert-buffer-no-confirm ()
+    "Revert buffer without confirmation."
+    (interactive)
+    (revert-buffer :ignore-auto :noconfirm))
+
 (provide 'init-command)

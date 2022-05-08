@@ -3,6 +3,7 @@
 (global-set-key (kbd "C-c i") 'open-init-file)
 (global-set-key (kbd "C-c t") 'delete-trailing-whitespace)
 (global-set-key (kbd "C-c d") 'delete-file-and-buffer)
+(global-set-key (kbd "C-c r") 'revert-buffer-no-confirm)
 
 (define-key minibuffer-local-completion-map (kbd "SPC") 'self-insert-command) ;; insert space in minibuffer
 
