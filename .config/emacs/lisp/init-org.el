@@ -6,7 +6,7 @@
 (setq org-capture-bookmark nil)
 
 (require 'org-roam)
-(setq org-roam-directory "~/documents/orgs/")
+(setq org-roam-directory "~/orgs/")
 (setq org-roam-db-location (concat org-roam-directory "org-roam.db"))
 (setq org-id-locations-file (concat org-roam-directory ".orgids"))
 (setq org-descriptive-links nil) ;; show `[[]]' in org links
