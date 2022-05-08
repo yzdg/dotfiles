@@ -31,7 +31,7 @@ alias gdog="git log --all --decorate --oneline --graph"
 alias gb="git branch"
 alias red="sudo sh -c 'rmmod psmouse; modprobe psmouse proto=imps'"
 alias tap="xinput --set-prop 'Synaptics TM3203-003' 'libinput Tapping Enabled' 1"
-alias grl="grep --recursive --line-number --binary-files=without-match"
+alias grl="grep --recursive --line-number --binary-files=without-match --exclude-dir=node_modules --exclude-dir=.git"
 alias cf="xclip -sel clip"
 
 # Load
