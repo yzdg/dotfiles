@@ -31,4 +31,7 @@
 ;; disbale `Completions' buffer from popping out
 (setq completion-auto-help nil)
 
+;; diable the bell
+(setq ring-bell-function 'ignore)
+
 (provide 'init-misc)
