@@ -4,6 +4,7 @@
 (setq user-full-name "yzd"
       user-mail-address "yzd@defuh.xyz"
       doom-font (font-spec :family "Fira Code" :size 16)
+      doom-unicode-font (font-spec :family "Source Han Sans CN" :size 16)
       doom-theme 'doom-zenburn
       display-line-numbers-type t
       org-directory "~/orgs/")
@@ -31,6 +32,8 @@
       "C-c r" #'revert-buffer-no-confirm)
 
 ;; org
+(setq org-preview-latex-image-directory "/tmp/ltximage/")
+
 (require 'find-lisp)
 (setq org-agenda-dir
       (expand-file-name "gtd/" org-directory))
@@ -39,10 +42,10 @@
 (after! org
   (setq org-capture-templates
   '(("i" "Inbox" entry
-     (file (expand-file-name "inbox.org" org-agenda-dir))
+     (file "gtd/inbox.org")
      "* TODO %?\n")
     ("s" "Slipbox" entry
-     (file (expand-file-name "zettle/inbox.org" org-directory))
+     (file "zettle/inbox.org")
      "* %?\n"))))
 
 (use-package! org-roam
@@ -75,3 +78,6 @@
 (use-package! eglot
   :config
   (add-hook 'eglot-managed-mode-hook #'eldoc-box-hover-mode t))
+
+;; spell
+(setq ispell-dictionary "en")
