@@ -70,3 +70,8 @@
            :immediate-finish t
            :unnarrowed t)))
   (setq org-roam-node-display-template (concat "${title:*} " (propertize "${tags:10}" 'face 'org-tag))))
+
+;; lsp
+(use-package! eglot
+  :config
+  (add-hook 'eglot-managed-mode-hook #'eldoc-box-hover-mode t))
