@@ -7,4 +7,4 @@ if [[ $# -ne 2 ]]; then
 	exit 1
 fi
 
-rsync -rtvzP "./$1/" "yzd@yzdeng.xyz:/var/www/$2"
+rsync -rtvzP "./$1/" "yzd@defuh.xyz:/var/www/$2"
