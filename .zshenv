@@ -1,5 +1,5 @@
 # Default programs
-export EDITOR="nvim"
+export EDITOR="vis"
 export PAGER="less"
 export BROWSER="firefox"
 
