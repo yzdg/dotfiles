@@ -41,12 +41,21 @@
       (find-lisp-find-files org-agenda-dir "\.org$"))
 (after! org
   (setq org-capture-templates
-  '(("i" "Inbox" entry
-     (file "gtd/inbox.org")
-     "* TODO %?\n")
-    ("s" "Slipbox" entry
-     (file "zettle/inbox.org")
-     "* %?\n"))))
+        '(("i" "Inbox" entry
+           (file "gtd/inbox.org")
+           "* TODO %?\n")
+          ("c" "Comp" entry
+           (file "gtd/comp.org")
+           "* TODO %?\n")
+          ("m" "Music" entry
+           (file "gtd/music.org")
+           "* TODO %?\n")
+          ("o" "Oversea" entry
+           (file "gtd/oversea.org")
+           "* TODO %?\n")
+          ("s" "Slipbox" entry
+           (file "gtd/slipbox.org")
+           "* TODO %?\n"))))
 
 (use-package! org-roam
   :init
